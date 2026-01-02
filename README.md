@@ -14,5 +14,8 @@ To debug this issue, the first step was to carefully read the error message and 
 
 The root cause was an incorrect assumption that both datasets shared the same schema. The fix involved separating the evaluation logic: quantitative evaluation (MSE) was performed only on a validation split of the training data, while the test set was used strictly for inference and qualitative visualization. This debugging process reinforced the importance of validating dataset structure before designing evaluation pipelines.
 
-##Experiment Notebook
+## Experiment Notebook
 I have also submitted the experiment notebook for the reference.
+
+## Test Images
+I have also add the images of testing the on test images for predicting the path with it's visualizations.
